@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
+	<script src="js/script.js"></script>
+</head>
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push"></div>
+
+    <div data-role="header">
+      <a data-iconpos="notext" data-role="button" data-icon="info" title=""></a>
+      <h1>News</h1>
+    </div>
+
+    <div data-role="content" role="main">
+		
+      <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
+	  
+		<div data-role="collapsible" data-collapsed-icon="home" data-expanded-icon="minus" data-collapsed="false">
+			<h3>Home</h3>
+			<div id="dataTable-home"></div>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="user" data-expanded-icon="minus" >
+			<h3>Sports</h3>
+			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
+				<thead>
+        			<tr>
+			            <th>Date</th>
+			            <th>News</th>
+			            <th>Favorite</th>
+			        </tr>
+			    </thead>
+			    <tbody id="tbody-sport">	
+    			</tbody>
+			</table>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="shop" data-expanded-icon="minus">
+			<h3>Business</h3>
+			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
+				<thead>
+        			<tr>
+			            <th>Date</th>
+			            <th>News</th>
+			            <th>Favorite</th>
+			        </tr>
+			    </thead>
+			    <tbody id="tbody-business">	
+    			</tbody>
+			</table>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="clock" data-expanded-icon="minus">
+			<h3>Financial</h3>
+			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
+				<thead>
+        			<tr>
+			            <th>Date</th>
+			            <th>News</th>
+			            <th>Favorite</th>
+			        </tr>
+			    </thead>
+			    <tbody id="tbody-financial">	
+    			</tbody>
+			</table>
+        </div>
+        <div data-role="collapsible" data-collapsed-icon="star" data-expanded-icon="minus">
+			<h3>Favorites</h3>
+			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
+				<thead>
+        			<tr>
+			            <th>Date</th>
+			            <th>News</th>
+			        </tr>
+			    </thead>
+			    <tbody id="tbody-favorites">	
+    			</tbody>
+			</table>
+        </div>		
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
