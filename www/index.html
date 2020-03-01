@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- on the html file the details of the app design are defined, with all the menu options available -->
 <html>
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- calling jquery libraries: -->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet"/>
@@ -13,19 +15,24 @@
 
     <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push"></div>
 
+	<!-- header with the title of the app -->
     <div data-role="header">
       <a data-iconpos="notext" data-role="button" data-icon="info" title=""></a>
-      <h1>News</h1>
+      <h1>News App - by Jessica Matias</h1>
     </div>
 
     <div data-role="content" role="main">
-		
+		<!-- collapsible menu to show each section at a time -->	
       <div data-role="collapsible-set" data-theme="b" data-content-theme="b">
 	  
+		<!-- home section with icon 'home'-->
 		<div data-role="collapsible" data-collapsed-icon="home" data-expanded-icon="minus" data-collapsed="false">
 			<h3>Home</h3>
+			<th>Welcome to the News APP!</th>
 			<div id="dataTable-home"></div>
-        </div>
+		</div>
+		
+		<!-- sports section with icon 'user'-->
         <div data-role="collapsible" data-collapsed-icon="user" data-expanded-icon="minus" >
 			<h3>Sports</h3>
 			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
@@ -39,7 +46,9 @@
 			    <tbody id="tbody-sport">	
     			</tbody>
 			</table>
-        </div>
+		</div>
+		
+		<!-- business section with icon 'shop'-->
         <div data-role="collapsible" data-collapsed-icon="shop" data-expanded-icon="minus">
 			<h3>Business</h3>
 			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
@@ -53,7 +62,9 @@
 			    <tbody id="tbody-business">	
     			</tbody>
 			</table>
-        </div>
+		</div>
+		
+		<!-- financial section with icon 'clock'-->
         <div data-role="collapsible" data-collapsed-icon="clock" data-expanded-icon="minus">
 			<h3>Financial</h3>
 			<table data-role="table" data-mode="reflow" class="ui-responsive table-stroke" >
